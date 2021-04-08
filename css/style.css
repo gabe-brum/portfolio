@@ -1,0 +1,846 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #E5E8EF;
+    padding: 25px 2%;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav.menu-desktop {
+    float: right;
+    font-family: Rajdhani;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop ul {
+    list-style: none;
+}
+
+header nav.menu-desktop ul li {
+    float: left;
+    font-size: 20px;
+    padding: 0 20px;
+    font-style: italic;
+    line-height: 70px;
+
+}
+
+header nav.menu-desktop a {
+    color: #B0CFBB;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #151E55;
+}
+
+header nav.menu-mobile {
+    display: none;
+}
+
+nav.menu-mobile {
+    cursor: pointer;
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-image: url('../imgs/menu.png');
+    background-size: 100% 100%;
+    margin-top: 10px;
+    float: right;
+    font-family: Rajdhani;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    background-color: #E5E8EF;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.menu-mobile ul li {
+    padding: 45px 0;
+    transition: 0.4s;
+    /* border-bottom: 1px solid #1A1B3D; */
+}
+
+nav.menu-mobile ul li:hover {
+    background-color: #B0CFBB;
+}
+
+nav.menu-mobile ul li a {
+    text-decoration: none;
+    color: #1A1B3D !important;
+    font-size: 32px;
+}
+
+/* TÉRMINO HEADER */
+
+/* QUEM SOU */
+
+section.quem-sou {
+    width: 100%;
+    padding-top: 120px;
+}
+
+.lado1 {
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 50vw;
+    background-color: #1A1B3D;
+}
+
+.lado2 {
+    float: left;
+    width: 60%;
+    height: 50vw;
+    background-color: #E5E8EF;
+    padding: 130px 0 150px 180px;
+    font-family: Rajdhani;
+}
+
+.lado2>.texto-apresentacao {
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+.lado2 h2 {
+    font-size: 32px;
+}
+
+.lado2>.texto-apresentacao p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.flutuado {
+    /* width: 100%; */
+    width: 400px;
+    position: absolute;
+    float: left;
+    top: 30%;
+    left: 20%;
+}
+
+.flutuado>.parte1-wraper {
+    width: 100%;
+    float: left;
+    background-color: #151E55;
+    box-shadow: -15px 5px 15px rgba(0, 0, 0, 0.295);
+    text-align: center;
+    align-items: center;
+}
+
+.parte1-wraper>.parte1 {
+    padding: 30px 4%;
+}
+
+.parte1-wraper>.parte1>.img-user img {
+    width: 60%;
+}
+
+.parte1-wraper>.parte1>.titulo {
+    padding: 20px 0 30px 0;
+}
+
+.parte1-wraper>.parte1>hr {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.parte1-wraper>.parte1>.titulo h2 {
+    font-size: 32px;
+    color: #E5E8EF;
+    font-family: Caveat;
+}
+
+.parte1-wraper>.parte1>.funcao {
+    padding-top: 30px;
+}
+
+.parte1-wraper>.parte1>.funcao p {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Rajdhani;
+    color: #E5E8EF;
+}
+
+.parte1-wraper>.midias {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background-color: #E5E8EF;
+    float: left;
+}
+
+.parte1-wraper>.midias a {
+    padding: 0 20px;
+}
+
+
+.parte1-wraper>.midias img {
+    padding-top: 15px;
+    width: 8%;
+}
+
+.flutuado>.parte2-wraper {
+    width: 50%;
+    float: right;
+    background-color: #E5E8EF;
+    text-align: center;
+    align-items: center;
+}
+
+/* TÉRMINO QUEM SOU */
+
+/* SKILLS */
+
+section.skills {
+    width: 100%;
+    height: 95vw;
+    background-image: linear-gradient(to bottom, #1A1B3D, #536D6A);
+    padding: 170px 4%;
+    text-align: center;
+    font-family: Rajdhani;
+}
+
+section.skills>.programacao {
+    width: 60%;
+    height: 400px;
+    margin: 0px auto 150px auto;
+    background-color: #E5E8EF;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.centralizador {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.centralizador>h2 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.scrollSkill {
+    max-width: 700px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-wraper {
+    width: 100%;
+}
+
+.skill-single {
+    float: left;
+    max-width: 100%;
+    padding: 0 45px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-wraper {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.skill-wraper .icone img {
+    width: 120px;
+    height: 120px;
+}
+
+.barra-progressao {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.progresso {
+    height: 30px;
+    background-color: #1A1B3D;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.um {
+    width: 80%;
+}
+
+.dois {
+    width: 50%;
+}
+
+.tres {
+    width: 40%;
+}
+
+.quatro {
+    width: 30%;
+}
+
+.cinco {
+    width: 40%;
+}
+
+.seis {
+    width: 30%;
+}
+
+.slider-bullets {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.slider-bullets span {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* -------------------------------- */
+
+section.skills>.design {
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #E5E8EF;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.centralizador2 {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.centralizador2>h2 {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.scrollSkill2 {
+    max-width: 700px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-wraper2 {
+    width: 100%;
+}
+
+.skill-single2 {
+    float: left;
+    max-width: 100%;
+    padding: 0 45px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-wraper2 {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.skill-wraper2>.icone2 img {
+    width: 120px;
+    height: 120px;
+}
+
+.barra-progressao2 {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.progresso2 {
+    height: 30px;
+    background-color: #1A1B3D;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.um2 {
+    width: 70%;
+}
+
+.dois2 {
+    width: 40%;
+}
+
+.tres2 {
+    width: 30%;
+}
+
+.slider-bullets2 {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.slider-bullets2 span {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* TÉRMINO SKILLS */
+
+/* FORMAÇÃO */
+
+section.formacao {
+    width: 100%;
+    height: 65vw;
+    background-color: #536D6A;
+    padding: 280px 4% 50px 4%;
+    text-align: center;
+    font-family: Rajdhani;
+    color: #E5E8EF !important;
+    font-size: 18px;
+}
+
+.formacao-wraper{
+    float: left;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+}
+
+.formacao-single{
+    width: 100%;
+}
+
+.icone-formacao > img{
+    width: 150px;
+    height: 150px;
+}
+
+/* TÉRMINO FORMAÇÃO */
+
+/* CONTATO */
+section.contato {
+    width: 100%;
+    height: 65vw;
+    background-image: linear-gradient(to bottom, #536D6A, #E5E8EF);
+    padding: 150px 4% 0px 4%;
+    text-align: center;
+    font-family: Rajdhani;
+    color: #1A1B3D;
+}
+
+.form{
+    width: 60%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #E5E8EF;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.315);
+    font-family: Rajdhani;
+}
+
+.form > h2{
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+section.contato form {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+section.contato .input-wraper {
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+section.contato .input-wraperB {
+    padding: 10px 0;
+}
+
+
+section.contato input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border: 1px solid #1A1B3D;
+    color: #1A1B3D;
+    background-color: #E5E8EF;
+    font-family: Rajdhani;
+    outline: 0;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+section.contato textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    border: 1px solid #1A1B3D;
+    background-color: #E5E8EF;
+    resize: none;
+    padding: 15px;
+    outline: 0;
+}
+
+.btn-form {
+    width: 100px;
+    height: 30px;
+    background-color: #536D6A;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom: 2px solid #1A1B3D;
+    transition: 0.5s;
+}
+
+.btn-form:hover {
+    background-color: #1A1B3D;
+
+}
+
+/* TÉRMINO CONTATO */
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    background-color: #E5E8EF;
+    padding: 0 50px;
+    font-family: Rajdhani;
+    padding-top: 30px;
+}
+
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}
+
+.dado-wraper {
+    width: 100%;
+    text-align: center;
+}
+
+.dado {
+    float: left;
+    width: 50%;
+    align-items: center;
+}
+
+.direita>.dado-wraper>.dado img {
+    width: 8%;
+}
+
+/* TÉRMINO FOOTER */
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1024px){
+    section.quem-sou > .lado1{
+        float: none;
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: 60vw;
+    }
+
+    .flutuado{
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 155px 30%;
+    }
+
+    section.quem-sou > .lado2{
+        float: none;
+        width: 100%;
+        height: 45vw;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .lado2 .texto-apresentacao{
+        text-align: justify;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    section.skills {
+        height: 125vw;
+    }
+
+    section.skills > .programacao{
+        width: 70%;
+    }
+
+    section.skills > .design{
+        width: 70%;
+    }
+
+    section.formacao{
+        height: 75vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header nav.menu-desktop {
+        display: none;
+    }
+
+    header nav.menu-mobile {
+        display: block;
+    }
+
+    section.quem-sou > .lado1{
+        height: 90vw;
+    }
+
+    .flutuado{
+        padding: 150px 20%;
+    }
+
+    section.quem-sou > .lado2{
+        height: 70vw;
+    }
+
+    section.skills {
+        height: 175vw;
+    }
+
+    section.skills > .programacao{
+        width: 90%;
+    }
+
+    section.skills > .design{
+        width: 90%;
+    }
+
+    section.formacao{
+        padding: 100px 4% 100px 4%;
+        height: 180vw;
+    }
+
+    .formacao-wraper{
+        flex-direction: column;
+    }
+
+    .formacao-single{
+        padding: 50px 0;
+    }
+
+    section.contato{
+        height: 120vw;
+    }
+
+    .form{
+        height: 520px;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    footer{
+        height: 270px;
+        padding: 0;
+    }
+
+    .esquerda{
+        float: none;
+        text-align: center;
+    }
+
+    .direita{
+        float: none;
+        margin-top: 30px;
+    }
+
+    .dado {
+        float: left;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .direita>.dado-wraper>.dado img {
+        width: 5%;
+    }
+}
+
+@media screen and (max-width: 667px){
+    section.quem-sou > .lado1{
+        height: 110vw;
+    }
+
+    .flutuado{
+        padding: 150px 10%;
+    }
+
+    section.quem-sou > .lado2{
+        height: 90vw;
+    }
+
+    section.skills {
+        height: 230vw;
+    }
+
+    section.skills > .programacao{
+        width: 100%;
+    }
+
+    section.skills > .design{
+        width: 100%;
+    }
+
+    section.formacao{
+        height: 240vw;
+    }
+
+    section.contato{
+        height: 150vw;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    section.quem-sou > .lado1{
+        height: 170vw;
+    }
+
+    section.quem-sou > .lado2{
+        height: 90vw;
+    }
+
+    section.skills {
+        height: 245vw;
+    }
+
+    section.skills > .programacao{
+        width: 100%;
+    }
+
+    section.skills > .design{
+        width: 100%;
+    }
+
+    section.formacao{
+        height: 230vw;
+    }
+
+    section.contato{
+        height: 160vw;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px){
+    section.quem-sou > .lado1{
+        height: 155vw;
+    }
+
+    .flutuado{
+        padding: 185px 10%;
+    }
+
+    section.quem-sou > .lado2{
+        height: 110vw;
+    }
+
+    section.skills {
+        padding: 220px 4%;
+        height: 285vw;
+    }
+
+    section.formacao{
+        height: 260vw;
+    }
+
+    section.contato{
+        height: 180vw;
+    }
+}
